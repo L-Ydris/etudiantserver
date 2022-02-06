@@ -1,0 +1,14 @@
+{
+  "name": "etudiantserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel server/ -d dist && rm -rf dist/app && cp -r app/ dist/",
+    "start": "npm run build && node dist/server.js",
+    "inspect": "node --inspect dist/server.js"
+  },
+  "author": "ydrislaribi1@gmail.com",
+  "license": "ISC"
+}
